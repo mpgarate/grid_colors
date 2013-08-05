@@ -1,0 +1,12 @@
+.row{
+	float:left;
+	clear:left;
+}
+
+.col{
+	background: #eee;
+	border: 1px solid white;
+	height: 8px;
+	width: 8px;
+	float:left;
+}
