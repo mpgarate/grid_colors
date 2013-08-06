@@ -9,139 +9,24 @@
 </head>
 <body>
 
-<?php echo "this is php" . 6*8; ?>
+<?php 
 
-<%= puts "this is ruby #{6*8}" %>
+function echo_grid($height,$width){
+	$r = 0;
+	$c = 0;
+		for ($r=0;$r<$height;$r++){
+			echo "<div class='row row-'" . $r . "'>
+			";
+			for ($c=0;$c<$width;$c++){
+				echo "<div class='col col-" . $c . "'></div>
+				";
+			}
+			echo "</div>";
+		}
+  }
 
-<div class="row row-1">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-2">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-3">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-4">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-5">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-6">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-7">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-8">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-9">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
-
-<div class="row row-10">
-	<div class="col col-1"></div>
-	<div class="col col-2"></div>
-	<div class="col col-3"></div>
-	<div class="col col-4"></div>
-	<div class="col col-5"></div>
-	<div class="col col-6"></div>
-	<div class="col col-7"></div>
-	<div class="col col-8"></div>
-	<div class="col col-9"></div>
-	<div class="col col-10"></div>
-</div>
+	echo_grid(70,100);
+ ?>
 
 </body>
 </html>
